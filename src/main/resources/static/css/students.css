@@ -1,0 +1,50 @@
+.profile-side-card {
+    border: none;
+    border-radius: 12px;
+}
+
+.profile-side-card .card-header {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.input-group-text {
+    background-color: #f1f3f5;
+    border-right: none;
+}
+
+.form-control {
+    border-left: none;
+}
+
+.form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+/* CSS for dashboard*/
+.dashboard-card{
+	border-radius: 15px;
+	transition: 0.3s;
+	cursor: pointer;
+	background: #ffffff;
+}
+
+.dashboard-card:hover{
+	transform: translateY(-6px);
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.dashboard-card .card-body{
+	padding: 30px;
+}
+
+.dashboard-card h2{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.dashboard-card h5{
+	font-weight: 600;
+	margin-top: 15px;
+}

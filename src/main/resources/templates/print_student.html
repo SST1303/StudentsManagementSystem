@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta charset="UTF-8">
+<title>Student Details</title>
+
+<link rel="stylesheet" th:href="@{/css/print_student.css}">
+
+</head>
+
+<body onload="window.print()">
+
+<div class="container">
+
+    <h2>Student Details</h2>
+
+    <table>
+
+        <tr>
+            <td>First Name</td>
+            <td th:text="${student.firstName}"></td>
+        </tr>
+
+        <tr>
+            <td>Middle Name</td>
+            <td th:text="${student.middleName ?: '-'}"></td>
+        </tr>
+
+        <tr>
+            <td>Last Name</td>
+            <td th:text="${student.lastName}"></td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td th:text="${student.email}"></td>
+        </tr>
+
+        <tr>
+            <td>Mobile Number</td>
+            <td th:text="${student.mobileNumber ?: 'Not Added'}"></td>
+        </tr>
+
+        <tr>
+            <td>Date Of Birth</td>
+            <td th:text="${student.dateOfBirth ?: 'Not Added'}"></td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td th:text="${student.address ?: 'Not Added'}"></td>
+        </tr>
+
+    </table>
+</div>
+
+</body>
+</html>

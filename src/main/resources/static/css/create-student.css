@@ -1,0 +1,19 @@
+body{
+    background:#f4f6f9;
+}
+
+.card{
+    border-radius:10px;
+}
+
+.card-header{
+    background:white;
+}
+
+.btn{
+    width:100%;
+}
+
+.form-control{
+    border-radius:6px;
+}
